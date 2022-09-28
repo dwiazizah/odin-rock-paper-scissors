@@ -17,3 +17,9 @@ function playRound(playerSelection, computerSelection) {
         return result = "You tied! Play again."
     }
 }
+
+let playerChoice = window.prompt("Let's play rock paper scissors! Type your choice.", "");
+
+function playerCaseInsensitive() {
+    return playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1).toLowerCase();
+} 
