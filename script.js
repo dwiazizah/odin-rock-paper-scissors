@@ -18,8 +18,12 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-let playerChoice = window.prompt("Let's play rock paper scissors! Type your choice.", "");
+let playerChoice = prompt("Let's play rock paper scissors! Type your choice.", "");
 
 function playerCaseInsensitive() {
     return playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1).toLowerCase();
-} 
+}
+
+const playerSelection = playerCaseInsensitive();
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection,computerSelection));
